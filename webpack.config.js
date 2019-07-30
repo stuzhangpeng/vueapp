@@ -35,7 +35,7 @@ module.exports = {
             //正则表达式匹配css中的背景图的url,并且通过？传参,如果limit=69642小于实际图片大小不会进行base64转码
             {test: /\.(jpg|png|jpeg|bmp|gif)$/, use: "url-loader?limit=69642"},
             /*解析字体文件*/
-            {test: /\.(jpg|png|jpeg|bmp|gif)$/, use: "url-loader"},
+            {test: /\.ttf$/, use: "url-loader"},
             {test: /\.(mkv|mp4|ogg|MPEG 4|WebM)$/, use: "url-loader"},
             /*配置vue-loader加载.vue文件*/
             /*需要安装vue-loader vue-template-compiler*/
