@@ -9,7 +9,15 @@ import "./src/lib/mui/css/mui.min.css"
 import "./src/lib/mui/css/icons-extra.css"
 Vue.component(Header.name, Header);
 /*导入路由模块*/
+/*导入mintui的轮播图组件*/
+import { Swipe, SwipeItem } from 'mint-ui';
+Vue.component(Swipe.name, Swipe);
+Vue.component(SwipeItem.name, SwipeItem);
 import router from "./src/router/router.js"
+/*导入axios*/
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+Vue.use(VueAxios, axios);
 var vm=new Vue(
     {
        el:"#app",

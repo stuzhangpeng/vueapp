@@ -13,6 +13,7 @@ var vueRouter=new VueRouter(
     {
        routes:[
            {path:"/home",component:HomeContainer},
+           {path:"/",redirect:"/home"},
            {path:"/search",component:SearchContainer},
            {path:"/member",component: MemberContainer},
            {path:"/shopcar",component:ShopCarContainer}
